@@ -1,4 +1,4 @@
-const mongoose = requier("mongoose")
+const mongoose = require("mongoose")
 
 const TracksScheme = new mongoose.Schema(
     {
@@ -35,7 +35,7 @@ const TracksScheme = new mongoose.Schema(
             },
         },
         mediaId:{
-            type:mongoose.Type.ObjetId,
+            type: mongoose.Types.ObjectId,
         },
     },
     {

@@ -1,4 +1,4 @@
-const mongoose = requier("mongoose")
+const mongoose = require("mongoose")
 
 const UserScheme = new mongoose.Schema(
     {
