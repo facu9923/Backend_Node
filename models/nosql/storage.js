@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 const StorageScheme = new mongoose.Schema(
     {
@@ -15,4 +15,4 @@ const StorageScheme = new mongoose.Schema(
     }
 );
 
-moduleexports = mongoose.model("storages", StorageScheme)
+module.exports = mongoose.model("storages", StorageScheme)

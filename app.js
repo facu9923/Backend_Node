@@ -6,7 +6,7 @@ const dbConnect = require('./config/mongo')
 
 app.use(express.json())
 app.use(cors())
-
+app.use(express.static("storage"))
 /**
  * Invocamos a las rutas 
  */
