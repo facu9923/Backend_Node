@@ -4,10 +4,10 @@ const router = express.Router();
 
 const {getItems, getItem, createItem} = require("../controllers/tracks")
 // http://localhost/tracks GET POST PUT DELETE
-
+const {validateObjectDataCreate} = require("../validators/tracks");
 
 router.get("/", getItems)
 
-router.post("/", createItem)
+router.post("/",validateObjectDataCreate, createItem)
 
 module.exports = router

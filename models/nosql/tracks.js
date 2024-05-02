@@ -19,7 +19,7 @@ const TracksScheme = new mongoose.Schema(
             name:{
                 type:String,
             },
-            nockname:{
+            nickname:{
                 type:String,
             },
             nationality:{
