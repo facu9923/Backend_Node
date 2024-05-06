@@ -10,7 +10,6 @@ const customHeader = (req, res, next) => {
     } catch (error) {
         res.status(404);
         res.send({ error: "ERROR" });
-       
     }
 };
 

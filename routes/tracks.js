@@ -29,7 +29,7 @@ router.get("/:id", validateGetObject, getItem);
  */
 router.put("/:id", validateGetObject, validateObjectDataCreate, updateItem);
 
-router.put("/", deleteItem);
+router.delete("/:id", validateGetObject, deleteItem);
 
 
 module.exports = router
