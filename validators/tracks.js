@@ -17,4 +17,12 @@ const validateObjectDataCreate = [
   },
 ];
 
-module.exports = { validateObjectDataCreate};
+
+const validateGetObject = [
+  check("id").exists().notEmpty().isMongoId(),
+  (req, res, next) => {
+    validateResult(req, res, next);
+  },
+];
+
+module.exports = { validateObjectDataCreate, validateGetObject};
